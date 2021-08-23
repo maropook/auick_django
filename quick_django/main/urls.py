@@ -14,5 +14,6 @@ urlpatterns = [
     path('forempty', views.forempty, name='forempty'),
     path('fortag', views.fortag, name='fortag'),
     path('master', views.master, name='master'),
+    path('static', views.static, name='static'),
 
 ]

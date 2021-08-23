@@ -68,3 +68,15 @@ def forempty(request):
 def fortag(request):
     return render(request, 'main/fortag.html', {
     })
+
+
+def master(request):
+    return render(request, 'main/master.html', {
+        'msg': 'こんちゃす'
+    })
+
+
+def static(request):
+    return render(request, 'main/static.html', {
+
+    })
