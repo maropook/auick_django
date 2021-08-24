@@ -1,0 +1,35 @@
+{% extends 'main/layout.html' %}
+
+{% block main %}
+
+
+
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ISBNコード</th>
+                <th>署名</th>
+                <th>価格</th>
+                <th>出版社</th>
+                <th>刊行日</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>{{book.isbn}}</td>
+                <td>{{book.title}}</td>
+                <td>{{book.price}}</td>
+                <td>{{book.publisher}}</td>
+                <td>{{book.published|date:'DATE_FORMAT'}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+{% endblock main %}
+
+
+</html>

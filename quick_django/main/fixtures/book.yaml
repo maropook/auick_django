@@ -5,12 +5,12 @@
     title: 独学PYTHON
     price: 3300
     publisher: 照英社
-    publish_date: 2020-06-22
+    published: 2020-06-22
 - model: main.book
-  pk: 1
+  pk: 2
   fields:
-    isbn: 999999
+    isbn: 11999
     title: 独学PYTHON
     price: 3300
     publisher: 照英社
-    publish_date: 2020-06-22
+    published: 2020-06-22

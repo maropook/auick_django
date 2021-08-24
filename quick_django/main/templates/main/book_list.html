@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'main/layout.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-    <title>python</title>
-</head>
+{% block main %}
+
+
 
 <body>
     <table class="table">
@@ -29,12 +24,12 @@
                 <td>{{b.price}}</td>
                 <td>{{b.publisher}}</td>
                 <td>{{b.published|date:'DATE_FORMAT'}}</td>
-
-                <td><a href="{% url 'crud_show' b.id %}">詳細</a><a href="{% url 'crud_edit' b.id %}">編集</a></td>
             </tr>
             {% endfor %}
         </tbody>
     </table>
 </body>
+{% endblock main %}
+
 
 </html>
